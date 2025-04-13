@@ -169,6 +169,10 @@
 }
 
 .card_text_link:focus {
+  outline: none;
+}
+
+.card_text_link:focus-visible {
   outline: 1px solid rgb(241, 178, 206);
   text-decoration: none;
 }
