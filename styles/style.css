@@ -73,6 +73,7 @@
 .header__theme-menu {
   display: grid;
   justify-content: end;
+  margin-block-start: 20px;
 }
 
 .header__theme-menu-list {
@@ -298,7 +299,6 @@
   
   .header__theme-menu {
     justify-content: center;
-    margin-block-start: 20px;
   }
 
   .header__theme-menu-list {
