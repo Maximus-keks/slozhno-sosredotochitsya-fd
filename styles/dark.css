@@ -15,6 +15,7 @@
   --shadow-color: rgb(255, 0, 112); /*тень заголовок и ссылки*/
   --decorate-element-color: rgb(255, 0, 112); /*REC и уголки*/
   --button-color: rgb(255, 0, 112); /*кнопки*/
+  --button-hover-color: rgba(255, 0, 112, 0.4); /*обводка при наведении на кнопки*/
   --section-title-color: rgb(255, 0, 112); /*заголовки секций*/
   --accent-title-color: rgb(0, 0, 40); /*текст заголовка в заливке*/
   --accent-title-fill: rgb(255, 0, 112); /*заливка заголовка*/
@@ -33,6 +34,7 @@
     --shadow-color: rgb(255, 0, 112); /*тень заголовок и ссылки*/
     --decorate-element-color: rgb(255, 0, 112); /*REC и уголки*/
     --button-color: rgb(255, 0, 112); /*кнопки*/
+    --button-hover-color: rgba(255, 0, 112, 0.4); /*обводка при наведении на кнопки*/
     --section-title-color: rgb(255, 0, 112); /*заголовки секций*/
     --accent-title-color: rgb(0, 0, 40); /*текст заголовка в заливке*/
     --accent-title-fill: rgb(255, 0, 112); /*заливка заголовка*/

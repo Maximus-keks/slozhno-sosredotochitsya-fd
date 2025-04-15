@@ -15,11 +15,11 @@
   --shadow-color: rgb(255, 141, 203); /*тень заголовок и ссылки*/
   --decorate-element-color: rgb(53, 52, 48); /*REC и уголки*/
   --button-color: rgb(53, 52, 48); /*кнопки*/
+  --button-hover-color: rgba(50, 49, 45, 0.4); /*обводка при наведении на кнопки*/
   --section-title-color: rgb(53, 52, 48); /*заголовки секций*/
   --accent-title-color: rgb(53, 52, 48); /*текст заголовка в заливке*/
   --accent-title-fill: rgb(255, 141, 203); /*заливка заголовка*/
   --text-color: rgb(53, 52, 48); /*текст в карточке*/
-
 }
 
 .theme-light .rec {
@@ -34,6 +34,7 @@
     --shadow-color: rgb(255, 141, 203); /*тень заголовок и ссылки*/
     --decorate-element-color: rgb(53, 52, 48); /*REC и уголки*/
     --button-color: rgb(53, 52, 48); /*кнопки*/
+    --button-hover-color: rgba(50, 49, 45, 0.4); /*обводка при наведении на кнопки*/
     --section-title-color: rgb(53, 52, 48); /*заголовки секций*/
     --accent-title-color: rgb(53, 52, 48); /*текст заголовка в заливке*/
     --accent-title-fill: rgb(255, 141, 203); /*заливка заголовка*/

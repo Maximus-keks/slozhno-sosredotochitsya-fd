@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   padding: 0 10px;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, monospace);
   font-size: var(--font-size, 18px);
   font-weight: 400;
   line-height: 1.3em;
@@ -73,7 +73,7 @@
 .header__theme-menu {
   display: grid;
   justify-content: end;
-  margin-block-start: 20px;
+  margin-block-start: 8px;
 }
 
 .header__theme-menu-list {
@@ -103,12 +103,10 @@
 }
 
 .header__theme-menu-button:hover {
-  color: rgb(255, 0, 112);
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--button-hover-color, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button_active {
-  color: rgb(255, 0, 112);
   border: 1px solid currentColor;
   pointer-events: none;
 }
@@ -118,6 +116,10 @@
   line-height: 0.825em;
   color: var(--main-title-color, rgba(219, 0, 255));
   text-shadow: 4px 4px 0 var(--shadow-color, rgba(255, 0, 112));
+}
+
+.header_text {
+  padding-block-end: 10px;
 }
 
 .title-decor {
@@ -140,14 +142,14 @@
   color: var(--section-title-color,rgba(255, 0, 112));
 }
 
-.card {
+.section_card-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.card_title {
-  margin-block-end: 10px;
+.problems {
+  margin-block-end: 48px;
 }
 
 .subtitle-decor {
@@ -156,6 +158,7 @@
 
 .card_text {
   color: var(--text-color, rgb(241, 178, 206));
+  padding-block-start: 10px;
 }
 
 .card_text_link {
@@ -164,8 +167,7 @@
 }
 
 .card_text_link:hover {
-  outline: none;
-  text-decoration: underline;
+  border-bottom: 1px solid currentColor;
 }
 
 .card_text_link:focus {
@@ -173,15 +175,10 @@
 }
 
 .card_text_link:focus-visible {
-  outline: 1px solid rgb(241, 178, 206);
-  text-decoration: none;
+  outline: 1px solid currentColor;
 }
 
-.gallery_title {
-  margin-block-end: 10px;
-}
-
-.gallery_image {
+.gallery {
   display: grid;
   gap: 10px;
 }
@@ -227,6 +224,10 @@
     bottom: 20px;
   }
 
+  .header__theme-menu {
+    margin-block-start: 20px;
+  }
+
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -238,6 +239,7 @@
   .header_text {
     inline-size: 50%;
     justify-self: end;
+    padding-block-end: 20px;
   }
 
   .content_section {
@@ -251,42 +253,43 @@
     grid-row: 1 / 3;
   }
 
-  .problems .card {
+  .problems .section_card-list {
     grid-column: 1 / 4;
   }
 
-  .gallery_title {
-    margin-block-end: 20px;
-  }
-
-  .gallery_image {
+  .gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
+  .gallery_title {
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+  }
+
   .sunset {
     grid-column: 1 / 3;
-    grid-row: 1 / 1;
+    grid-row: 2 / 2;
   }
 
   .ice-cream {
     grid-column: 3 / 3;
-    grid-row: 1 / 3;
+    grid-row: 2 / 4;
   }
 
   .tape {
     grid-column: 1 / 1;
-    grid-row: 2 / 4;
+    grid-row: 3 / 5;
   }
   
   .books {
     grid-column: 2 / 2;
-    grid-row: 2 / 2;
+    grid-row: 3 / 3;
   }
 
   .street {
     grid-column: 2 / 4;
-    grid-row: 3 / 3;
+    grid-row: 4 / 4;
   }
 
   .footer {
@@ -309,7 +312,12 @@
     flex-direction: row;
   }
 
-  .problems .card {
+  .content_section {
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+
+  .problems .section_card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
